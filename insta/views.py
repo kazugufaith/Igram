@@ -1,12 +1,12 @@
-# from django.shortcuts import render,redirect
-# from django.http import HttpResponse,Http404
-# from .models import Profile,Image,Comments
-# from .forms import NewImageForm,NewProfileForm,NewCommentForm
-# from django.contrib.auth.decorators import login_required
+from django.shortcuts import render,redirect
+from django.http import HttpResponse,Http404
+from .models import Profile,Image,Comments
+from .forms import NewImageForm,NewProfileForm,NewCommentForm
+from django.contrib.auth.decorators import login_required
 
-# # Create your views here.
-# def home(request):
-#   return render(request,'home.html')
+# Create your views here.
+def home(request):
+  return render(request,'home.html')
 
 # def user_profile(request):
 #   current_user = request.user
