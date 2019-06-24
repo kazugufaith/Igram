@@ -1,0 +1,29 @@
+{% comment %} {% extends 'base.html' %}
+{% block content %}
+  <div class="container-fluid">
+    <div class="row search-page">
+      <div class="col-md-2"></div>
+      {% if founds %}
+        
+        <div class="col-md-8">
+        <h2> Found {{founds|length}} results of searched {{message}}. </h2>
+      {% else %}
+        <h2> Sorry, couldn't find user of that match. <br> Or <br> {{message}}. </h2>
+       </div>
+
+      {% endif %}
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      {% if founds %}
+        {% for user in founds %}
+        <div class="col-sm-6 col-md-3">
+          <img src="{{user.profile_pic.url}}" alt="User Profile" class="img-fluid">
+          <p>{{user.bio}}</p>
+          <p>{{user.image}}</p>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %} {% endcomment %}

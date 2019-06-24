@@ -1,0 +1,49 @@
+{% comment %} {%extends "registration/base.html"%}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <!-- Empty div -->
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      {% if form.errors %}
+        <p> Password or Username is incorrect </p>
+      {% endif %}
+      <div class="card ">
+
+        <div class="card-title">
+          <h3 class="text-center">Sign In</h3>
+        </div>
+        <div class="card-body">
+
+          <form  action="/accounts/login/" method="post">
+            {% csrf_token %}
+            {% bootstrap_form form%}
+
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-sm" value="Login">
+            </div>
+
+            <input type="hidden" name="next" value="{{next}}">
+
+            <p class="text-center">Don't have an account? <a href="/accounts/register/">Sign Up</a></p>
+
+          </form>
+
+        </div>
+        <div>
+            <div>
+              <span class="download"><h5 class="text-center">Get the app.</h5></span>
+            </div>              
+            <a href="https://itunes.apple.com/app/instagram/id389801252?mt=8&vt=lo" target="_blank"><img src="../static/images/apple-store.png" alt="App Store" class="img-fluid" width="155"></a><a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3DXFvrAwAEAAFy928zYRp1M-Qf66mW%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank"><img src="../static/images/playstore.png" alt="Google Store" class="img-fluid" width="150"></a>
+          </div>
+
+      </div>
+
+    </div>
+    <!-- empty div -->
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+{% endblock %} {% endcomment %}

@@ -1,0 +1,66 @@
+{% comment %} {% extends 'base.html' %}
+
+{% block content %}
+  <div class="container-fluid">
+   
+      {% if user.is_authenticated %}  
+    <div class="row profile-section"> 
+   
+      <div class="col-md-2"></div>
+      <div class="col-md-4">      
+        {% for profile in profile_pic %}
+        <img src="{{profile.profile_pic.url}}" class="rounded-circle img-fluid" alt="Profile-Image" width="250" height="250">
+        {% endfor %}
+      </div>
+      <div class="col-md-4">
+        <div>
+          <h2 class="name">{{user.username}}</h2><button class="btn btn-light p-settings"><img src="https://img.icons8.com/material-rounded/24/000000/settings.png" width="30"></button><br>
+        </div>
+        <div>
+          <ul>
+            
+            <span class="numbers"><li>0 Posts</li></span>
+            <span class="numbers"><li>0 Followers</li></span>
+            <span class="numbers"><li>0 Following</li></span>
+          </ul>
+        </div>
+        <div>        
+          <a href="{% url 'profile' %}"><button class="btn btn-light p-edit">Edit Profile</button></a>
+          {% for profile in profile_pic%}
+          <p class="bio">{{profile.bio}}</p>
+          {% endfor %}
+        </div>       
+      </div>      
+      <div class="col-md-2"></div>
+      
+    </div>
+    <div class="row image-posts">
+     
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="row">
+            <a href="{%url 'newPost'%}"><button class="btn"><img src="https://img.icons8.com/material/24/000000/plus-2-math.png" width="35"></button></a>
+        </div>
+        <div class="row gallery-row">
+          {% for image in posts %}
+          <div class="col-md-4 post-column">  
+            <div class="post-container">
+              <img src="{{image.image.url}}" class="img-fluid image-post z-depth-4" height="400" alt="Image">            
+            </div>         
+          </div>  
+          {% endfor %}        
+        </div>       
+
+      </div>
+      <div class="col-md-2"></div>
+      
+    </div>
+    {% endif %}
+  
+  </div>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>
+  <script>
+    UPLOADCARE_PUBLIC_KEY = '4d0b24be184b5451955a';
+  </script>
+  
+{% endblock %} {% endcomment %}

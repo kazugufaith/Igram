@@ -1,0 +1,57 @@
+{% comment %} {% extends 'registration/base.html' %}
+{% load bootstrap3 %}
+
+{% block content %}
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Instagram</title>
+  </head>
+  <body id="home">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div>
+              <img src="/static/images/iphonIG.gif" alt="Demo" class="img-fluid" height="450">              
+            </div>            
+          </div>
+          <div class="col-md-4">
+            
+            <div class="card">      
+              <div class="card-title">
+                <h3 class="text-center">Instagram</h3>
+              </div>
+              <div class="card-body"> 
+                <span class="text-center"><p><strong>Sign up to see photos and videos from your friends.</strong></p></span>
+                <p><a href="https://web.facebook.com/"><button class="btn btn-primary btn-lg home-btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="26" height="26"
+                  viewBox="0 0 192 192"
+                  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"></path><g><g id="surface1"><path d="M168,148c0,11.04688 -8.95312,20 -20,20h-104c-11.04688,0 -20,-8.95312 -20,-20v-104c0,-11.04688 8.95312,-20 20,-20h104c11.04688,0 20,8.95312 20,20z" fill="#3f70b5"></path><path d="M137.46875,100h-13.46875v52h-20v-52h-12v-16h12v-9.64062c0.01562,-14.03125 5.84375,-22.35938 22.375,-22.35938h13.625v16h-9.14062c-6.4375,0 -6.85938,2.40625 -6.85938,6.89062v9.10938h16z" fill="#ffffff"></path></g></g></g></svg>Log in with Facebook</button></a></p>
+                <p><a href="/accounts/register/"><button class="btn btn-primary btn-lg home-btn">Sign Up</button></a></p>
+                <span class="text-center"><p>By signing up, you agree to our <b>Terms , Data Policy</b> and <b>Cookies Policy</b> .</p> </span>  
+              </div>  
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <p class="text-center">Have an account? <a href="/accounts/login/">Sign In</a></p>
+              </div>                
+            </div> 
+            <div>
+              <div>
+                <span class="download"><h5 class="text-center">Get the app.</h5></span>
+              </div>              
+              <a href="https://itunes.apple.com/app/instagram/id389801252?mt=8&vt=lo" target="_blank"><img src="../static/images/apple-store.png" alt="App Store" class="img-fluid" width="155"></a><a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3DXFvrAwAEAAFy928zYRp1M-Qf66mW%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank"><img src="../static/images/playstore.png" alt="Google Store" class="img-fluid" width="150"></a>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+  </body>
+  </html>
+  {% include 'footer.html' %}
+{% endblock %} {% endcomment %}
