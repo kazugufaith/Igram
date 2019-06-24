@@ -22,16 +22,16 @@ def feeds(request):
 
   return render(request,'feeds.html',{"posts":posts,"profiles":profiles,"comments":comments})
 
-# def search(request):
-#   if 'user' in request.GET and request.GET['user']:
-#       s_term=request.GET.get("user")
-#       found=Image.search_users(s_term)
-#       message=f'{s_term}'
+def search(request):
+  if 'user' in request.GET and request.GET['user']:
+      s_term=request.GET.get("user")
+      found=Image.search_users(s_term)
+      message=f'{s_term}'
 
-#       return render(request,'search.html',{'message':message,'founds':found,"term":s_term})
-#   else:
-#       message="You did not search any user please input a user name"
-#       return render(request,"search.html",{"message":message})
+      return render(request,'search.html',{'message':message,'founds':found,"term":s_term})
+  else:
+      message="You did not search any user please input a user name"
+      return render(request,"search.html",{"message":message})
 
 # @login_required(login_url='/accounts/login')
 # def comments(request):
