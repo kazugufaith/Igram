@@ -2,13 +2,13 @@
 
 #### This is a social media instagram-like clone application. Users are signed up to use the application and can create and edit their profile, add image posts to their application page. See feeds from other users while on feeds page. Jun 23, 2019.
 
-<!-- #### By Faith Kazungu
+#### By Faith Kazungu
 
 ## Description
 Deployed to: 
 The application enables users to make posts of images and have a gallery to showcase to other developers. Users must be signed in to post images, like or comment to a post. On home page they can view feeds from other users'. Users can navigate through their profile page and back to the feeds page. The application is a social platform for sharing and viewing interesting images and related stories.
 
-## Setup/Installation Requirements
+<!-- ## Setup/Installation Requirements
 * Clone the project
 * After cloning, inside the project folder, install the virtual environment using `$ virtualenv virtual` or `$ python3.6 -m venv --without-pip virtual`
 * Activate virtual environment `$ source virtual/bin/activate`
