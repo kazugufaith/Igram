@@ -1,8 +1,8 @@
-<!-- # Igram
+# Igram
 
 #### This is a social media instagram-like clone application. Users are signed up to use the application and can create and edit their profile, add image posts to their application page. See feeds from other users while on feeds page. Jun 23, 2019.
 
-#### By Faith Kazungu
+<!-- #### By Faith Kazungu
 
 ## Description
 Deployed to: 
