@@ -15,12 +15,12 @@ def user_profile(request):
 
   return render(request,'insta.html',{"profile_pic":profiles,"posts":posts})
 
-# def feeds(request):  
-#   comments= Comments.objects.all()
-#   profiles = Profile.objects.all()
-#   posts = Image.objects.all()
+def feeds(request):  
+  comments= Comments.objects.all()
+  profiles = Profile.objects.all()
+  posts = Image.objects.all()
 
-#   return render(request,'feeds.html',{"posts":posts,"profiles":profiles,"comments":comments})
+  return render(request,'feeds.html',{"posts":posts,"profiles":profiles,"comments":comments})
 
 # def search(request):
 #   if 'user' in request.GET and request.GET['user']:
