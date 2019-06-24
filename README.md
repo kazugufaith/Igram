@@ -29,7 +29,7 @@ Some of the features are still on development, these include; like,comment. Asid
 The application is built on:
 * Python3.6.8
 * JavaScript and JQuery
-* Bootstrap 4
+* Bootstrap 3
 * Django 1.11 framework
 * Postgresql database
 
