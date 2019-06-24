@@ -24,26 +24,26 @@ class Profile(models.Model):
     user = cls.objects.filter(Profile__user=user.id)
     return user
 
-# class Image(models.Model):
-#   image = models.ImageField(upload_to='image/',default='arusha.jpeg')
-#   name = models.CharField(max_length=40)
-#   caption = HTMLField()
-#   user = models.ForeignKey(User,on_delete=models.CASCADE)
-#   likes = models.IntegerField(default=0)
+class Image(models.Model):
+  image = models.ImageField(upload_to='image/',default='arusha.jpeg')
+  name = models.CharField(max_length=40)
+  caption = HTMLField()
+  user = models.ForeignKey(User,on_delete=models.CASCADE)
+  likes = models.IntegerField(default=0)
     
-#   def __str__(self):
-#     return self.name
+  def __str__(self):
+    return self.name
 
-#   def image_save(self):
-#     self.save()
+  def image_save(self):
+    self.save()
   
-#   def image_delete(self):
-#     self.delete()
+  def image_delete(self):
+    self.delete()
 
-#   @classmethod
-#   def search_user(cls,s_term):
-#     result = cls.objects.filter(user__username__icontains=s_term)
-#     return result
+  @classmethod
+  def search_user(cls,s_term):
+    result = cls.objects.filter(user__username__icontains=s_term)
+    return result
 
 # class Comments(models.Model):
 #   comment = HTMLField()
