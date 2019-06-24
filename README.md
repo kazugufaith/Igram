@@ -8,7 +8,7 @@
 Deployed to: 
 The application enables users to make posts of images and have a gallery to showcase to other developers. Users must be signed in to post images, like or comment to a post. On home page they can view feeds from other users'. Users can navigate through their profile page and back to the feeds page. The application is a social platform for sharing and viewing interesting images and related stories.
 
-<!-- ## Setup/Installation Requirements
+## Setup/Installation Requirements
 * Clone the project
 * After cloning, inside the project folder, install the virtual environment using `$ virtualenv virtual` or `$ python3.6 -m venv --without-pip virtual`
 * Activate virtual environment `$ source virtual/bin/activate`
@@ -22,7 +22,7 @@ The application enables users to make posts of images and have a gallery to show
 | User can add image posts to their accounts | clicks on add button above gallery  | Redirected to the forms page of adding posts |
 | User is able to navigate through the pages | Clicks on the menu options in menu bar | Navigation through the pages |
 
-## Known Bugs
+<!-- ## Known Bugs
 Some of the features are still on development, these include; like,comment. Aside from these, the application runs well. In case you come across any errors or failure of the application other than the one mentioned, do reach out via email: *faithmugesia@gmail.com*
 
 ## Technologies Used
