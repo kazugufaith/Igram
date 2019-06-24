@@ -45,13 +45,13 @@ class Image(models.Model):
     result = cls.objects.filter(user__username__icontains=s_term)
     return result
 
-# class Comments(models.Model):
-#   comment = HTMLField()
-#   user = models.ForeignKey(User,on_delete=models.CASCADE)
-#   image = models.ForeignKey(Image,on_delete=models.CASCADE,null=True)
+class Comments(models.Model):
+  comment = HTMLField()
+  user = models.ForeignKey(User,on_delete=models.CASCADE)
+  image = models.ForeignKey(Image,on_delete=models.CASCADE,null=True)
 
-#   def __str__(self):
-#     return self.comment
+  def __str__(self):
+    return self.comment
 
-#   def comment_save(self):
-#     self.save()
+  def comment_save(self):
+    self.save()
