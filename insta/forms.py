@@ -6,10 +6,10 @@ class NewImageForm(forms.ModelForm):
     model=Image
     exclude = ['user','likes','comments']
 
-# class NewProfileForm(forms.ModelForm):
-#   class Meta:
-#     model=Profile
-#     exclude = ['user']
+class NewProfileForm(forms.ModelForm):
+  class Meta:
+    model=Profile
+    exclude = ['user']
 
 # class NewCommentForm(forms.ModelForm):
 #   class Meta:
