@@ -22,7 +22,7 @@ The application enables users to make posts of images and have a gallery to show
 | User can add image posts to their accounts | clicks on add button above gallery  | Redirected to the forms page of adding posts |
 | User is able to navigate through the pages | Clicks on the menu options in menu bar | Navigation through the pages |
 
-<!-- ## Known Bugs
+## Known Bugs
 Some of the features are still on development, these include; like,comment. Aside from these, the application runs well. In case you come across any errors or failure of the application other than the one mentioned, do reach out via email: *faithmugesia@gmail.com*
 
 ## Technologies Used
@@ -60,4 +60,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*
 Copyright (c) 2019 **Faith Kazungu**
- -->
+
